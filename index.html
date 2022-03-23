@@ -5,12 +5,14 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="shortcut icon" type="imagex/png" href="./img/icons/icon.ico">
   <title>Home</title>
 
   <script src="https://kit.fontawesome.com/b019fa643e.js" crossorigin="anonymous"></script>
 
 
   <link rel="stylesheet" href="./css/style.css">
+  <link rel="stylesheet" href="https://unpkg.com/flickity@2/dist/flickity.min.css">
 
 </head>
 
@@ -22,11 +24,11 @@
     <div class="menu-hamburguer"></div>
 
     <div class="logo-top">
-      <img src="./img/logos/CGM - Logo-04 2.png" alt="Logo">
+      <a href="index.html"><img src="./img/logos/CGM - Logo-04 2.png" alt="Logo"></a>
     </div>
 
     <div class="mobile-logo">
-      <img src="./img/logos/CGM - Logo-06 1.png" alt="">
+      <a href="index.html"><img src="./img/logos/CGM - Logo-06 1.png" alt="Logo"></a>
     </div>
 
     <nav class="navigation-top">
@@ -72,7 +74,7 @@
       <div class="border-text"></div>
     </div>
 
-    
+
 
     <div class="btn-whats">
       <div class="attendance">
@@ -97,7 +99,7 @@
         <img src="./img//image 4.png" alt="">
 
         <div class="btn-soluçoes">
-          <a href="Fisica.html">Sou Pessoa Física <i class="fa-solid fa-arrow-right-long"></i></a>
+          <a href="fisica.html">Sou Pessoa Física <i class="fa-solid fa-arrow-right-long"></i></a>
         </div>
       </div>
 
@@ -115,7 +117,58 @@
   <section id="parceiros">
     <h3>Nossos parceiros</h3>
 
-    <!-- flickity -->
+    <div class="main-carousel" data-flickity='{ "freeScroll": true,"autoPlay": true }'>
+      <div class="carousel-cell">
+        <div class="marca">
+          <div class="item">Marca</div>
+        </div>
+      </div>
+      <div class="carousel-cell">
+        <div class="marca">
+          <div class="item">Marca</div>
+        </div>
+      </div>
+      <div class="carousel-cell">
+        <div class="marca">
+          <div class="item">Marca</div>
+        </div>
+      </div>
+      <div class="carousel-cell">
+        <div class="marca">
+          <div class="item">Marca</div>
+        </div>
+      </div>
+      <div class="carousel-cell">
+        <div class="marca">
+          <div class="item">Marca</div>
+        </div>
+      </div>
+      <div class="carousel-cell">
+        <div class="marca">
+          <div class="item">Marca</div>
+        </div>
+      </div>
+      <div class="carousel-cell">
+        <div class="marca">
+          <div class="item">Marca</div>
+        </div>
+      </div>
+      <div class="carousel-cell">
+        <div class="marca">
+          <div class="item">Marca</div>
+        </div>
+      </div>
+      <div class="carousel-cell">
+        <div class="marca">
+          <div class="item">Marca</div>
+        </div>
+      </div>
+      <div class="carousel-cell">
+        <div class="marca">
+          <div class="item">Marca</div>
+        </div>
+      </div>
+    </div>
   </section>
 
   <section id="elogios">
@@ -199,7 +252,7 @@
         </p>
 
         <div class="btn-soluçoes">
-          <a href="#">Conheça nossa história<i class="fa-solid fa-arrow-right-long"></i></a>
+          <a href="sobre.html">Conheça nossa história<i class="fa-solid fa-arrow-right-long"></i></a>
         </div>
       </div>
     </div>
@@ -241,7 +294,17 @@
         <ul>
           <li><a href="index.html">Início</a></li>
           <li><a href="sobre.html">Sobre</a></li>
-          <li><a href="#">Soluçõe</a></li>
+          <li>
+            <div class="dropdown">
+              <button class="dropbtn">Soluções
+                <i class="fa-solid fa-caret-down"></i>
+              </button>
+              <div class="dropdown-content">
+                <a href="fisica.html">Física</a>
+                <a href="juridica.html">Jurídica</a>
+              </div>
+            </div>
+          </li>
           <li><a href="#">Contatos</a></li>
         </ul>
       </div>
@@ -269,7 +332,7 @@
         <div class="direitos">
           <h4>CGM &copy; 2022 - Todos os direitos reservados</h4>
         </div>
-  
+
         <div class="logo-footer">
           <img src="./img/logos/image 11.png" alt="">
         </div>
@@ -279,6 +342,7 @@
 
 
   <script src="./js/menu.js"></script>
+  <script src="https://unpkg.com/flickity@2/dist/flickity.pkgd.min.js"></script>
 </body>
 
 </html>

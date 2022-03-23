@@ -141,6 +141,17 @@ header .social-networks-top .icons a {
   display: block;
 }
 
+footer .dropdown-content {
+  background-color: var(--azul-escuro);
+}
+
+footer .dropdown .dropbtn {
+  background-color: var(--azul-escuro);
+  color: #fff;
+  margin: 2px 0 8px 0;
+  font-size: 16px;
+}
+
 .menu-hamburguer {
   width: 32px;
   height: 3px;
@@ -216,11 +227,13 @@ header .social-networks-top .icons a {
 
   header .navigation-top ul li a {
     color: #fff;
+    font-size: 20px;
   }
 
   header .dropdown .dropbtn {
     background-color: var(--azul-1);
     color: #fff;
+    font-size: 20px;
   }
 
   .dropdown-content {
@@ -411,6 +424,42 @@ header .social-networks-top .icons a {
   display: block;
   margin: 20px auto;
   background: linear-gradient(90deg, #5d98c5 0%, rgba(93, 152, 197, 0) 100%);
+}
+
+#parceiros .main-carousel {
+  width: 90%;
+}
+
+#parceiros .carousel-cell {
+  width: 28%;
+  height: 150px;
+  margin-right: 10px;
+  border-radius: 5px;
+  counter-increment: carousel-cell;
+}
+
+#parceiros .marca {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+#parceiros .marca .item {
+  width: 85%;
+  height: 85%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: var(--cinza-3);
+  box-shadow: 0px 5px 21px 0px #0000001a;
+}
+
+@media screen and (max-width:770px) {
+  #parceiros .carousel-cell {
+    width: 66%;
+  }
 }
 
 #elogios {
@@ -661,6 +710,7 @@ footer .container {
   flex-wrap: wrap;
   justify-content: center;
   width: 80%;
+  max-width: 1423px;
   margin: 0 auto;
   padding: 50px 0;
 }
@@ -743,6 +793,7 @@ footer .dev-bottom .position-footer {
   display: flex;
   flex-wrap: wrap;
   width: 80%;
+  max-width: 1423px;
   margin: 0 auto;
   display: flex;
   align-items: center;
@@ -827,6 +878,7 @@ footer .dev-bottom .logo-footer {
 
 #about .container {
   width: 80%;
+  max-width: 1423px;
   display: flex;
   margin: 0 auto;
   padding: 20px 0;
@@ -876,6 +928,7 @@ footer .dev-bottom .logo-footer {
 
 #ideais .container {
   width: 90%;
+  max-width: 1423px;
   margin: 50px auto;
   display: flex;
   flex-wrap: wrap;
@@ -1009,8 +1062,8 @@ footer .dev-bottom .logo-footer {
 }
 
 #planejamentos .container .card-1 {
-  width: 30%;
-  margin: 15px;
+  width: 28%;
+  margin: 30px 15px;
   height: 380px;
   display: flex;
   align-items: center;
@@ -1032,7 +1085,7 @@ footer .dev-bottom .logo-footer {
 }
 
 #planejamentos .container .card-1 p {
-  color: #fff; 
+  color: #fff;
   font-size: 20px;
   padding: 10px;
   text-align: center;
@@ -1060,8 +1113,8 @@ footer .dev-bottom .logo-footer {
 }
 
 #planejamentos .container .card-2 {
-  width: 30%;
-  margin: 15px;
+  width: 28%;
+  margin: 30px 15px;
   height: 380px;
   display: flex;
   align-items: center;
@@ -1083,15 +1136,15 @@ footer .dev-bottom .logo-footer {
 }
 
 #planejamentos .container .card-2 p {
-  color: #fff; 
+  color: #fff;
   font-size: 20px;
   padding: 10px;
   text-align: center;
 }
 
 #planejamentos .container .card-3 {
-  width: 30%;
-  margin: 15px;
+  width: 28%;
+  margin: 30px 15px;
   height: 380px;
   display: flex;
   align-items: center;
@@ -1113,7 +1166,7 @@ footer .dev-bottom .logo-footer {
 }
 
 #planejamentos .container .card-3 p {
-  color: #fff; 
+  color: #fff;
   font-size: 20px;
   padding: 10px;
   text-align: center;
@@ -1140,9 +1193,164 @@ footer .dev-bottom .logo-footer {
   margin-left: 10px;
 }
 
+#planejamentos .btn a i {
+  margin-left: 5px;
+}
+
+#planejamentos .btn a:hover {
+  background-color: var(--azul-1);
+  color: #fff;
+  transition: 0.5s;
+}
+
+#planejamentos .container .card-4 {
+  width: 44%;
+  height: 380px;
+  min-width: 300px;
+  margin: 10px;
+  border-radius: 16px;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  background-image: url(../img/card-4.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+  box-shadow: inset 0px 0px 300px 50px rgba(0, 0, 0, 0.685);
+}
+
+#planejamentos .container .card-4 h3{
+  color: #fff;
+  font-size: 34px;
+  margin-left: 20px;
+  width: 40px;
+}
+
+#planejamentos .container .card-4 p {
+  color: #fff;
+  font-size: 20px;
+  padding: 20px;
+}
+
+#planejamentos .card-4 .btn {
+  position: absolute;
+  bottom: -20px;
+  left: 20px;
+}
+
+#planejamentos .container .card-5 {
+  width: 44%;
+  height: 380px;
+  min-width: 300px;
+  margin: 10px;
+  border-radius: 16px;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  background-image: url(../img/card-5.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+  box-shadow: inset 0px 0px 300px 50px rgba(0, 0, 0, 0.685);
+}
+
+#planejamentos .container .card-5 h3{
+  color: #fff;
+  font-size: 34px;
+  margin-left: 20px;
+  width: 40px;
+}
+
+#planejamentos .container .card-5 p {
+  color: #fff;
+  font-size: 20px;
+  padding: 20px;
+}
+
+#planejamentos .card-4 .btn {
+  position: absolute;
+  bottom: -20px;
+  left: 20px;
+}
+
+#planejamentos .card-5 .btn {
+  position: absolute;
+  bottom: -20px;
+  left: 20px;
+}
+
+#planejamentos .container-left {
+  width: 80%;
+  max-width: 1423px;
+  margin: 0 auto;
+  display: flex;
+  flex-wrap: wrap;
+  padding: 20px 0;
+}
+
+#planejamentos .container-left .card-6 {
+  width: 28%;
+  margin: 30px 15px;
+  height: 380px;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: space-around;
+  position: relative;
+  min-width: 300px;
+  border-radius: 16px;
+  background-image: url(../img/card-6.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  box-shadow: inset 0px 0px 300px 50px rgba(0, 0, 0, 0.685);
+}
+
+#planejamentos .container-left .card-6 h3 {
+  color: #fff;
+  font-size: 34px;
+  margin-left: 20px;
+}
+
+#planejamentos .container-left .card-6 p {
+  color: #fff;
+  font-size: 20px;
+  padding: 10px;
+  text-align: center;
+}
+
+#planejamentos .container-left .card-7 {
+  width: 28%;
+  margin: 30px 15px;
+  height: 380px;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: space-around;
+  position: relative;
+  min-width: 300px;
+  border-radius: 16px;
+  background-image: url(../img/card-7.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  box-shadow: inset 0px 0px 300px 50px rgba(0, 0, 0, 0.685);
+}
+
+#planejamentos .container-left .card-7 h3 {
+  color: #fff;
+  font-size: 34px;
+  margin-left: 20px;
+}
+
+#planejamentos .container-left .card-7 p {
+  color: #fff;
+  font-size: 20px;
+  padding: 10px;
+  text-align: center;
+}
 @media screen and (max-width: 770px) {
   header .logo-top-fisica img {
     width: 180px;
+    margin: 10px;
   }
 
   #planos {
@@ -1171,7 +1379,7 @@ footer .dev-bottom .logo-footer {
     margin: 20px auto;
   }
 
-  #planejamentos .container .card {
+  #planejamentos .container .card-4 {
     margin-bottom: 50px;
   }
 }
